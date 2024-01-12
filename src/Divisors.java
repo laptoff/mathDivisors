@@ -7,8 +7,8 @@ public class Divisors {
 
     public static List<Integer> divisors(Integer n){
             
-        for (int i = n-2*n; i <= n; i++) {
-            for (int j = n-2*n; j <= n; j++) {
+        for (int i = n*-1; i <= n; i++) {
+            for (int j = n*-1; j <= n; j++) {
                 if (i*j == n) {
                     divisorsList.add(i);
                 }
