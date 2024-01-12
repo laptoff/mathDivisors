@@ -5,7 +5,7 @@ public class App {
         
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("VeuilEnter value: ");
+        System.out.println("Enter value: ");
         int x = scanner.nextInt();
 
         for (int n : Divisors.divisors(x)) {
