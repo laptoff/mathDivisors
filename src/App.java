@@ -7,11 +7,17 @@ public class App {
 
         System.out.println("Veuillez entrer une valeur: ");
         int x = scanner.nextInt();
-        scanner.close();
 
         for (int n : Divisors.divisors(x)) {
             System.out.println(n);
         }
+
+        System.out.println("Veuillez entrer deux valeurs pour le PGCD: ");
+        int n1 = scanner.nextInt();
+        int n2 = scanner.nextInt();
+        scanner.close();
+
+        System.out.println("Le PGCD est de: " + GCD.gcd(n1, n2));
         
     }
 }
